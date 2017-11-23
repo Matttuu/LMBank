@@ -9,4 +9,4 @@ ___
 | Sebastian     |             D            |            S             |
 | Daniel        |             S            |            D             |
 
-__S = Scrum master |  D = Developer__
+*S = Scrum master |  D = Developer*
