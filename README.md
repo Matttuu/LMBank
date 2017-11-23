@@ -1,10 +1,10 @@
 # LMBank Project
-===
+___
 
 | Developers    | 1st Sprint scrum master  | 2nd Sprint scrum master  |
-| ------------- |:-------------:| -----:   |
-| Flenner       | Daniel                   | Sebastian                |
+| ------------- |:-------------:| --------:|                          
+| Flenner       |                          |                          |
 | Mathias       |                          |                          |
 | Mads          |                          |                          |
-| (Sebastian)   |                          |                          |
-| (Daniel)      |                          |                          |
+| (Sebastian)   |                          |             x            |
+| (Daniel)      |            x             |                          |
