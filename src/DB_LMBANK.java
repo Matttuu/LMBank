@@ -31,7 +31,7 @@ public class DB_LMBANK {
             System.out.println("\n>>> MySQL JDBC Driver er registreret.");
         }
 
-        catch (ClassNotFoundException ex){
+        catch (ClassNotFoundException ex) {
             ex.printStackTrace();
             System.out.println("\n>>> MySQL JDBC Driver kunne IKKE findes!");
         }
@@ -42,15 +42,14 @@ public class DB_LMBANK {
             con = DriverManager.getConnection(url, user, password); //Variablen "con" initialiseres med data
         }
 
-        catch (SQLException ex){
+        catch (SQLException ex) {
             ex.printStackTrace();
             System.out.println("\n>>> Kunne ikke forbinde, prøv igen!");
         }
 
         //Hvis "con" kunne initialiseres med korrekt url, user og password meddeles det, at forbindelsen er oprettet
-        if (con !=null){
+        if (con != null) {
             System.out.println("\n>>> Forbindelsen blev oprettet.");
-
         }
 
         //Hvis connection fortsat er "null" fejler forbindelsen, og dette meddeles
