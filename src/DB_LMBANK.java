@@ -62,4 +62,20 @@ public class DB_LMBANK {
 
     }
 
+    // Metode til at lukke forbindelsen igen, så databasen ikke overbelastes
+    public static Connection closeConnection() {
+
+        try {
+            con.close();
+            System.out.println("\n>>> Forbindelsen blev afbrudt som forventet.");
+        }
+
+        catch (SQLException ex) {
+            System.out.println("\n>>> Forbindelsen blev IKKE afbrudt som forventet!");
+        }
+
+        return con;
+
+    }
+
 }
