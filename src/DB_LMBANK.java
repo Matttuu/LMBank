@@ -62,7 +62,7 @@ public class DB_LMBANK {
 
     }
 
-    // Metode til at lukke forbindelsen igen, så databasen ikke overbelastes
+    //Metode til at lukke forbindelsen igen, så databasen ikke overbelastes
     public static Connection closeConnection() {
 
         try {

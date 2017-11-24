@@ -4,8 +4,8 @@ public class Test {
 
     public static void main(String[] args) {
 
-        DB_LMBANK.connect();
-        DB_LMBANK.closeConnection();
+        DB_LMBANK.connect(); //Connecter til databasen
+        //DB_LMBANK.closeConnection(); //Lukker forbindelsen igen
 
     }
 }
