@@ -31,7 +31,7 @@ public class DB_LMBANK {
             System.out.println("\n>>> MySQL JDBC Driver er registreret.");
         }
 
-        catch (ClassNotFoundException ex) {
+        catch (ClassNotFoundException ex)   {
             ex.printStackTrace();
             System.out.println("\n>>> MySQL JDBC Driver kunne IKKE findes!");
         }
