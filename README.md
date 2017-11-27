@@ -8,7 +8,7 @@ Desuden fremsættes specifikke krav og process-bestemmelser for henholdsvis fage
 
 #### Projektrapport:
 I en tilhørende rapport har vi forsøgt at dokumentere vores tanker, process, arbejde mv. Bl.a. er SCRUM-processen beskrevet heri.
-[Læs rapport for 1. semesterprojektet](https://github.com/user/repo/blob/branch/other_file.md)
+[Læs rapport for 1. semesterprojektet](https://github.com/user/repo/blob/branch/other_file.md).
 
 #### Arbejdsfordeling:
 | Group members | 1st Sprint activities    | 2nd Sprint activities    |
