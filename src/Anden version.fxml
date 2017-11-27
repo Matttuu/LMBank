@@ -29,7 +29,7 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e2e2" height="665.0" layoutX="-2.0" layoutY="144.0" stroke="BLACK" strokeType="INSIDE" width="1292.0" />
             <ImageView fitHeight="243.0" fitWidth="324.0" layoutX="-13.0" layoutY="-37.0">
                <image>
-                  <Image url="@Dropbox/LMBankLogo.png" />
+                  <Image url="../assets/logo.gif" />
                </image>
             </ImageView>
          </children>
