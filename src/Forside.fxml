@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="807.0" prefWidth="1289.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="807.0" prefWidth="1289.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane layoutX="20.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="811.0" prefWidth="1288.0" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -39,17 +39,17 @@
                   <Font size="25.0" />
                </font>
             </Label>
-            <Label layoutX="587.0" layoutY="347.0" text="Opsparings Konto">
+            <Label layoutX="557.0" layoutY="347.0" text="Opsparings Konto">
                <font>
                   <Font name="AdobeArabic-Regular" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="612.0" layoutY="433.0" text="Løn Konto">
+            <Label layoutX="592.0" layoutY="433.0" text="Løn Konto">
                <font>
                   <Font name="AdobeArabic-Regular" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="611.0" layoutY="496.0" text="Løn Konto 2">
+            <Label layoutX="593.0" layoutY="496.0" text="Løn Konto 2">
                <font>
                   <Font name="AdobeArabic-Regular" size="20.0" />
                </font>
@@ -65,12 +65,12 @@
                   <Font name="AdobeArabic-Regular" size="54.0" />
                </font>
             </Label>
-            <Label layoutX="604.0" layoutY="372.0" text="1234">
+            <Label layoutX="610.0" layoutY="372.0" text="1234">
                <font>
                   <Font size="10.0" />
                </font>
             </Label>
-            <Label layoutX="634.0" layoutY="372.0" text="12345678">
+            <Label layoutX="640.0" layoutY="372.0" text="12345678">
                <font>
                   <Font size="10.0" />
                </font>
