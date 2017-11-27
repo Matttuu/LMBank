@@ -34,7 +34,7 @@ public class Login {
                 Stage primaryStage = new Stage();
                 Parent root = FXMLLoader.load(getClass().getResource("forside.fxml"));
                 primaryStage.setTitle("LMBank");
-                primaryStage.setScene(new Scene(root, 1280, 809));
+                primaryStage.setScene(new Scene(root, 1289, 807));
                 primaryStage.show();
 
             } else {

@@ -10,7 +10,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
         primaryStage.setTitle("LMBank");
-        primaryStage.setScene(new Scene(root, 650, 600));
+        primaryStage.setScene(new Scene(root, 600, 463));
         primaryStage.show();
     }
 
