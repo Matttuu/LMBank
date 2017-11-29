@@ -29,7 +29,7 @@
             <Font name="AdobeArabic-Regular" size="51.0" />
          </font>
       </Label>
-      <Button layoutX="599.0" layoutY="617.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="151.0" text=" Godkend og opret">
+      <Button fx:id="btCreateCustomer" onAction="#OpretKunde" layoutX="599.0" layoutY="617.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="151.0" text=" Godkend og opret">
          <font>
             <Font size="20.0" />
          </font></Button>
@@ -38,7 +38,7 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <TextField alignment="TOP_RIGHT" layoutX="554.0" layoutY="378.0" prefHeight="27.0" prefWidth="120.0" promptText="Fornavn">
+      <TextField fx:id="txtFName" alignment="TOP_RIGHT" layoutX="554.0" layoutY="378.0" prefHeight="27.0" prefWidth="120.0" promptText="Fornavn">
          <font>
             <Font size="10.0" />
          </font>
@@ -58,7 +58,7 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <TextField alignment="TOP_LEFT" layoutX="675.0" layoutY="378.0" prefHeight="27.0" prefWidth="116.0" promptText="Efternavn">
+      <TextField fx:id="txtLName" alignment="TOP_LEFT" layoutX="675.0" layoutY="378.0" prefHeight="27.0" prefWidth="116.0" promptText="Efternavn">
          <font>
             <Font size="10.0" />
          </font>
