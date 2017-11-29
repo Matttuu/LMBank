@@ -1,6 +1,6 @@
 # LMBank Project
 
-![alt text](URL her "LMBANK Logo")
+![alt text](MD_Logo.png "LMBANK Logo")
 
 #### Opgavebeskrivelse:
 Projektopgavens beskrivelse går overordnet ud på, at vi skal fremstille et tilføjelsesprogram til et eksisterende banksystem, som skal kunne håndtere henholdsvis en opsparings- og lønkonto. På opsparingskontoen skal der kunne overføres til og fra egne konti, og der skal ikke være tilknyttet nogle kreditkort. Lønkontoen må ikke komme under et bestemt beløb, såfremt dette sker, tilsendes en besked til kunden.
