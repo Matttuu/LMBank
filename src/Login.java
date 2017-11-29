@@ -1,12 +1,11 @@
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 public class Login {
@@ -20,9 +19,12 @@ public class Login {
     @FXML
     private PasswordField txtPassword;
 
+
     public void Login(ActionEvent event) throws Exception{
 
         DB_Statements stmts = new DB_Statements();
+
+
 
         try {
             String username = txtUsername.getText();
@@ -42,9 +44,9 @@ public class Login {
             }
         } catch (Exception e1) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error Dialog");
-            alert.setHeaderText("Look, an Error Dialog");
-            alert.setContentText("Ooops, there was an error!");
+            alert.setTitle("Fejl meddelelse");
+            alert.setHeaderText("Der opstod en fejl!");
+            alert.setContentText("Ooops, der skete en fejl!");
 
             alert.showAndWait();
         }

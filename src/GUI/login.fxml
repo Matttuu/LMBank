@@ -22,20 +22,22 @@
             <Font size="36.0" />
          </font>
       </Label>
-      <Button fx:id="Login" defaultButton="true" layoutX="223.0" layoutY="373.0" mnemonicParsing="false" onAction="#Login" prefHeight="32.0" prefWidth="145.0" style="-fx-background-color: #151928;" text="Login" textFill="#2196f3">
-         <effect>
-            <Glow />
-         </effect></Button>
-      <PasswordField fx:id="txtPassword" layoutX="226.0" layoutY="322.0" prefHeight="26.0" prefWidth="160.0" promptText="Password">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </PasswordField>
+
       <TextField fx:id="txtUsername" layoutX="227.0" layoutY="276.0" prefHeight="26.0" prefWidth="160.0" promptText="Brugernavn">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
+      <PasswordField fx:id="txtPassword" layoutX="226.0" layoutY="322.0" prefHeight="26.0" prefWidth="160.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="Login" defaultButton="true" layoutX="223.0" layoutY="373.0" mnemonicParsing="false" onAction="#Login" prefHeight="32.0" prefWidth="145.0" style="-fx-background-color: #151928; -;"  text="Login" textFill="#2196f3">
+         <effect>
+            <Glow />
+         </effect></Button>
+
       <ImageView fitHeight="26.0" fitWidth="25.0" layoutX="197.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/head.png" />
