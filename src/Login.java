@@ -32,7 +32,7 @@ public class Login {
             if (stmts.checkLogin(username, password)) {
                 System.out.println("\n>>> Login Success");
                 Stage primaryStage = new Stage();
-                Parent root = FXMLLoader.load(getClass().getResource("forside.fxml"));
+                Parent root = FXMLLoader.load(getClass().getResource("GUI/Forside.fxml"));
                 primaryStage.setTitle("LMBank");
                 primaryStage.setScene(new Scene(root, 1289, 807));
                 primaryStage.show();

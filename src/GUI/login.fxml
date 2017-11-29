@@ -14,7 +14,7 @@
    <children>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@assets/logo.gif" />
+            <Image url="@../assets/logo.gif" />
          </image>
       </ImageView>
       <Label layoutX="229.0" layoutY="179.0" text="LMBank" textFill="#2196f3">
@@ -38,12 +38,12 @@
       </TextField>
       <ImageView fitHeight="26.0" fitWidth="25.0" layoutX="197.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@assets/head.png" />
+            <Image url="@../assets/head.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="197.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@assets/lock.png" />
+            <Image url="@../assets/lock.png" />
          </image>
       </ImageView>
    </children>

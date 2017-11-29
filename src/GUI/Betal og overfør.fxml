@@ -29,12 +29,12 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e2e2" height="665.0" layoutX="-2.0" layoutY="144.0" stroke="BLACK" strokeType="INSIDE" width="1292.0" />
             <ImageView fitHeight="243.0" fitWidth="324.0" layoutX="-13.0" layoutY="-37.0">
                <image>
-                  <Image url="@assets/logo.gif" />
+                  <Image url="@../assets/logo.gif" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="500.0" layoutX="460.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="384.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="500.0" layoutX="461.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="384.0" />
       <Label layoutX="519.0" layoutY="202.0" text="Betal og overfør">
          <font>
             <Font name="AdobeArabic-Regular" size="35.0" />
@@ -90,7 +90,7 @@
          </items>
       </MenuButton>
       <Label layoutX="575.0" layoutY="385.0" text="-" />
-      <Label layoutX="636.0" layoutY="452.0" text="Gebyr 0 kr.">
+      <Label layoutX="636.0" layoutY="445.0" text="Gebyr 0 kr.">
          <font>
             <Font size="8.0" />
          </font>
@@ -110,7 +110,7 @@
             <Font size="10.0" />
          </font>
       </Label>
-      <DatePicker layoutX="583.0" layoutY="542.0" prefHeight="26.0" prefWidth="196.0" />
+      <DatePicker layoutX="586.0" layoutY="542.0" prefHeight="26.0" prefWidth="196.0" />
       <Label layoutX="574.0" layoutY="362.0" prefHeight="13.0" prefWidth="155.0" text="Eller indtast reg.nr og konto.nr">
          <font>
             <Font size="10.0" />
