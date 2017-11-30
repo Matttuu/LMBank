@@ -40,6 +40,9 @@ public class Employee {
             String lastName = txtLName.getText();
 
         }
+        catch{
+
+        }
 
 
     }

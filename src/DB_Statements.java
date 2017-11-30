@@ -46,7 +46,7 @@ public class DB_Statements {
 
         return check;
     }
-    public void insertData(String tableName, String fName, String lName){
+    public void insertData(String tableName, String fName, String lName){ //LALALALALALA
         //statement
         String query = "insert into " + tableName + "(" +
                 "myName, " +
