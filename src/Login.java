@@ -8,25 +8,41 @@ import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+/**
+ * Denne klasse indeholder metoden Login, som er knyttet til login.fxml.
+ * Login metoden gør brug af DB_Statements klassen hvor at metoden checkLogin er defineret.
+ *
+ * @author Daniel,Flenner, Mads, Mathias, Sebastian.
+ * @version 1.0
+ * @since December 2017
+
+ */
+
 public class Login {
 
-    @FXML
-    private Label lblStatus;
-
+    // Erklærer variabel
     @FXML
     private TextField txtUsername;
 
+    // Erklærer variabel
     @FXML
     private PasswordField txtPassword;
 
-
+    // Opretter metode login som tager imod et ActionEvent parameter ved navn event.
     public void Login(ActionEvent event) throws Exception{
 
+        // Opretter et nyt objekt af klassen DB_Statements
         DB_Statements stmts = new DB_Statements();
 
 
-
+        /** Starter en try-catch block som åbner en GUI hvor man kan logge ind, hvis username og password er rigtigt
+         * så skifter den over til scenen Forside.fxml
+         * Hvis username og password er forkert udskriver den en fejlmeddelelse.
+         * Hvis tilfældet er at der skulle ske en helt tredje fejl, f.eks ingen internet adgang eller lign -
+         * så bliver der fanget en Exception, og vist en fejlmeddelelse i en alert box.
+         */
         try {
+            // Erklærer 2 variabler.
             String username = txtUsername.getText();
             String password = new String(txtPassword.getText());
 
