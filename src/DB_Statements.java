@@ -1,5 +1,19 @@
 import java.sql.*;
 
+
+/**
+ * <h1>DB_Statements</h1>
+ *
+ * DB_Statements klassen skaber en forbindelse til databasen
+ *
+ * <p>
+ *
+ *
+ * @author Gruppe LilleMads
+ * @version 1.0
+ * @since   30-11-2017
+ */
+
 public class DB_Statements {
 
     // Declare a Statement
