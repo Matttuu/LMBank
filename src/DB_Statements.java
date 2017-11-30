@@ -46,4 +46,24 @@ public class DB_Statements {
 
         return check;
     }
+    public void insertData(String tableName, String fName, String lName){
+        //statement
+        String query = "insert into " + tableName + "(" +
+                "myName, " +
+                "adress) " +
+                "values('Kasper', 'My adress'), " +
+                "('Jesper', 'Villavej'), " +
+                "('Mogens', 'Slumalle')";
+        try {
+            //connection
+            stmt = con.createStatement();
+            //execute
+            stmt.executeUpdate(query);
+            System.out.println("\n--Successfully inserted data into " + tableName + "--");
+        }
+        catch (SQLException ex){
+            System.out.println("\n--Query did not execute--");
+            ex.printStackTrace();
+        }
+    }
 }
