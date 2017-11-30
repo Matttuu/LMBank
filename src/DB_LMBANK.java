@@ -1,13 +1,11 @@
-/* Denne klasse indeholder de variabler og den metode, vi bruger til at forbinde til projektets database.
-Original udgave lavet af Douglas Beaver. Tilrettet af Mads Dideriksen og Daniel Lyck.
-1. semesterprojekt, december 2017 */
-
 //Importerer nødvendige klasser
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-//Opretter klassen "DB_LMBANK" og sætter access modifier til "public"
+/** Denne klasse indeholder de variabler og den metode, vi bruger til at forbinde til projektets database.
+* Original udgave lavet af Douglas Beaver. Tilrettet af Mads Dideriksen og Daniel Lyck.
+* 1. semesterprojekt, december 2017 */
 public class DB_LMBANK {
 
     //Deklarerer og initialiserer variabler
@@ -18,7 +16,7 @@ public class DB_LMBANK {
     private static String password = "yoloswag"; //Password (Hip-hurra for en dårlig kryptering)
 
     /** Laver en metode kaldet "connect" i klassen "Connection".
-    Denne metode forsøger samlet at forbinde til den angivede database **/
+    * Denne metode forsøger samlet at forbinde til den angivede database **/
     public static Connection connect() {
 
         //Meddeler, at der forsøges at blive oprettet forbindelse til driveren
@@ -36,8 +34,8 @@ public class DB_LMBANK {
             System.out.println("\n>>> MySQL JDBC Driver kunne IKKE findes!");
         }
 
-        /** Try-catch-block der forsøger at forbinde til databasen med brugernavn og kodeord.
-        Her anvendes de variabler, der bliver deklareret og initialiseret i starten af koden **/
+        /* Try-catch-block der forsøger at forbinde til databasen med brugernavn og kodeord.
+        Her anvendes de variabler, der bliver deklareret og initialiseret i starten af koden */
         try {
             con = DriverManager.getConnection(url, user, password); //Variablen "con" initialiseres med data
         }
@@ -62,7 +60,9 @@ public class DB_LMBANK {
 
     }
 
-    //Metode til at lukke forbindelsen igen, så databasen ikke overbelastes
+    /** Metode til at lukke forbindelsen igen, så databasen ikke overbelastes.
+    * @try Forsøger at afbryde forbindelsen
+    * @catch Opfanger exception */
     public static Connection closeConnection() {
 
         try {

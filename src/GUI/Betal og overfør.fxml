@@ -6,35 +6,16 @@
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cbcccd" height="105.0" layoutX="-16.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="1309.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9ea2a4" height="47.0" layoutX="-11.0" layoutY="97.0" stroke="BLACK" strokeType="INSIDE" width="1303.0" />
-            <Label layoutX="1038.0" layoutY="4.0" text="Flenner Flenner">
-               <font>
-                  <Font name="AdobeArabic-Regular" size="20.0" />
-               </font>
-            </Label>
-            <Button fx:id="LogAf" layoutX="1195.0" layoutY="4.0" mnemonicParsing="false" text="Log af " />
-            <Button layoutX="105.0" layoutY="105.0" mnemonicParsing="false" text="Betal og overfør" textFill="WHITE" />
-            <Button layoutX="24.0" layoutY="105.0" mnemonicParsing="false" text="Forsiden" textFill="WHITE" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e2e2" height="665.0" layoutX="-2.0" layoutY="144.0" stroke="BLACK" strokeType="INSIDE" width="1292.0" />
-            <ImageView fitHeight="243.0" fitWidth="324.0" layoutX="-13.0" layoutY="-37.0">
-               <image>
-                  <Image url="@../assets/logo.gif" />
-               </image>
-            </ImageView>
-         </children>
-      </AnchorPane>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="500.0" layoutX="461.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="384.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="500.0" layoutX="461.0" layoutY="175.0" stroke="#41a66c" strokeType="INSIDE" width="384.0" />
       <Label layoutX="519.0" layoutY="202.0" text="Betal og overfør">
          <font>
             <Font name="AdobeArabic-Regular" size="35.0" />
@@ -45,8 +26,7 @@
             <Font size="10.0" />
          </font>
       </Label>
-      <Button fx:id="BetalOgOverfør_Godkend" layoutX="582.0" layoutY="601.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="151.0" text="Betal og overfør" />
-      <MenuButton fx:id="AfsenderKonto" alignment="TOP_CENTER" layoutX="576.0" layoutY="275.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="151.0" text="Vælg konto" textFill="#79797c">
+      <MenuButton fx:id="AfsenderKonto" alignment="TOP_CENTER" layoutX="576.0" layoutY="275.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #41a66c#41a66c;" text="Vælg konto">
         <items>
           <MenuItem mnemonicParsing="false" text="Lønkonto" />
           <MenuItem mnemonicParsing="false" text="Opsparings konto" />
@@ -83,7 +63,7 @@
             <Font size="10.0" />
          </font>
       </Label>
-      <MenuButton fx:id="ModtagerKonto" accessibleRole="TABLE_VIEW" alignment="TOP_CENTER" layoutX="575.0" layoutY="329.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="151.0" text="Vælg konto" textFill="#79797c">
+      <MenuButton fx:id="ModtagerKonto" accessibleRole="TABLE_VIEW" alignment="TOP_CENTER" layoutX="575.0" layoutY="329.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #41a66c#41a66c;" text="Vælg konto">
          <items>
             <MenuItem mnemonicParsing="false" text="Opsparings konto" />
             <MenuItem mnemonicParsing="false" text="Pingvin konto" />
@@ -116,5 +96,49 @@
             <Font size="10.0" />
          </font>
       </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="105.0" layoutX="-24.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="1309.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="47.0" layoutX="-19.0" layoutY="103.0" stroke="#41a66c" strokeType="INSIDE" width="1303.0" />
+      <Button fx:id="Login" defaultButton="true" layoutX="5.0" layoutY="109.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="145.0" style="-fx-background-color: #41a66c#41a66c #41a66c#41a66c;" text="Forsiden">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="Login1" defaultButton="true" layoutX="160.0" layoutY="109.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="145.0" style="-fx-background-color: #41a66c#41a66c #41a66c#41a66c;" text="Betal og overfør">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="Login11" defaultButton="true" layoutX="1176.0" layoutY="9.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="94.0" style="-fx-background-color: #41a66c#41a66c #41a66c#41a66c;" text="Log af">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="1020.0" layoutY="11.0" text="Flenner Flenner">
+         <font>
+            <Font name="AdobeArabic-Regular" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="87.0" fitWidth="266.0" layoutX="-3.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/lmbank_logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Login12" defaultButton="true" layoutX="580.0" layoutY="601.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="145.0" style="-fx-background-color: #41a66c#41a66c #41a66c#41a66c;" text="Betal og overfør">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
