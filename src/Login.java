@@ -15,7 +15,6 @@ import javafx.stage.Stage;
  * @author Daniel,Flenner, Mads, Mathias, Sebastian.
  * @version 1.0
  * @since December 2017
-
  */
 
 public class Login {
@@ -35,7 +34,8 @@ public class Login {
         DB_Statements stmts = new DB_Statements();
 
 
-        /** Starter en try-catch block som åbner en GUI hvor man kan logge ind, hvis username og password er rigtigt
+        /**
+         * Starter en try-catch block som åbner en GUI hvor man kan logge ind, hvis username og password er rigtigt
          * så skifter den over til scenen Forside.fxml
          * Hvis username og password er forkert udskriver den en fejlmeddelelse.
          * Hvis tilfældet er at der skulle ske en helt tredje fejl, f.eks ingen internet adgang eller lign -
