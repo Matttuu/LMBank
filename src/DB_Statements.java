@@ -87,11 +87,11 @@ public class DB_Statements {
         int userPassword = r.nextInt(high-low) + low;
 
         //statement
-        String query = "insert into Users(userName, userPassword, fname, lname) values( '" +
+        String query = "insert into Users(userName, userPassword, fname, lname, fk_roles_id) values( '" +
                 userName + "', '" +
                 userPassword + "', '" +
                 fName + "', '" +
-                lName + "')";
+                lName + "', '3'";
 
         try {
             //connection
