@@ -78,7 +78,7 @@ public class DB_Statements {
             ex.printStackTrace();
         }
     }
-    public void createCustomer(String fName, String lName){
+    public void createCustomer(String fName, String lName){ //
         String userName = fName;
 
         Random r = new Random();
