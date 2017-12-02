@@ -1,4 +1,5 @@
 import java.sql.*;
+import java.util.Random;
 
 public class DB_Statements {
 
@@ -46,20 +47,44 @@ public class DB_Statements {
 
         return check;
     }
-    public void insertData(String tableName, String fName, String lName){ //LALALALALALA
+
+    public void useDB(String DB_Name){
         //statement
-        String query = "insert into " + tableName + "(" +
-                "myName, " +
-                "adress) " +
-                "values('Kasper', 'My adress'), " +
-                "('Jesper', 'Villavej'), " +
-                "('Mogens', 'Slumalle')";
+        String query = "use " + DB_Name;
+        try {
+            //connection
+            stmt = con.createStatement();
+            //execute query
+            stmt.executeUpdate(query);
+            System.out.println("\n--Using" + DB_Name + "--");
+        }
+        catch (SQLException ex){
+            //handle sql exception
+            System.out.println("\n--Query did not execute--");
+            ex.printStackTrace();
+        }
+    }
+    public void createCustomer(String fName, String lName){
+        String userName = fName;
+
+        Random r = new Random();
+        int low = 1000;
+        int high = 9999;
+        int userPassword = r.nextInt(high-low) + low;
+
+        //statement
+        String query = "insert into Users(userName, userPassword, fname, lname) values( '" +
+                userName + "', '" +
+                userPassword + "', '" +
+                fName + "', '" +
+                lName + "')";
+
         try {
             //connection
             stmt = con.createStatement();
             //execute
             stmt.executeUpdate(query);
-            System.out.println("\n--Successfully inserted data into " + tableName + "--");
+            System.out.println("\n--Successfully inserted data into Users--");
         }
         catch (SQLException ex){
             System.out.println("\n--Query did not execute--");

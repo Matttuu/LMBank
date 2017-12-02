@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
+import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
@@ -20,7 +21,7 @@ import java.sql.Statement;
 
 public class Employee {
     //Statements til at udføre førespørgelser
-    private Statement stmt;
+
 
     @FXML
     private Button btCreateCustomer;
@@ -31,20 +32,27 @@ public class Employee {
     @FXML
     private TextField txtLName;
 
+    @FXML
+    private TextField txtAccType;
+
     public void OpretKunde(ActionEvent event) throws Exception{
 
         DB_Statements stmts = new DB_Statements();
 
-        try{
+        try {
             String frontName = txtFName.getText();
             String lastName = txtLName.getText();
+            String accountType = txtAccType.getText();
 
+            stmts.createCustomer(frontName, lastName);
         }
-        catch{
-
+        catch(Exception el){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Fejl 404");
+            alert.setHeaderText("Der opstod en fejl!");
+            alert.setContentText("Ooops, der skete en fejl!");
+            alert.showAndWait();
         }
-
-
     }
 
 }
