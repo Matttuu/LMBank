@@ -44,6 +44,7 @@ public class Employee {
             String lastName = txtLName.getText();
             String accountType = txtAccType.getText();
 
+            stmts.useDB("n4_dk_db");
             stmts.createCustomer(frontName, lastName);
         }
         catch(Exception el){
