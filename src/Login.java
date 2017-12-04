@@ -33,7 +33,6 @@ public class Login {
         // Opretter et nyt objekt af klassen DB_Statements
         DB_Statements stmts = new DB_Statements();
 
-
         /**
          * Starter en try-catch block som åbner en GUI hvor man kan logge ind, hvis username og password er rigtigt
          * så skifter den over til scenen Forside.fxml
@@ -54,11 +53,20 @@ public class Login {
                 primaryStage.setTitle("LMBank");
                 primaryStage.setScene(new Scene(root, 1289, 807));
 
-               //    primaryStage.setFullScreen(true);       // Sætter stage i fullscreen, så den passer til alle skærme. Dog følger GUI ikke med eftersom det ikke er responsive.
+                /* Sætter stage i fullscreen, så den passer til alle skærme.
+                Dog følger GUI ikke med eftersom det ikke er responsive. */
+               //    primaryStage.setFullScreen(true);
                 primaryStage.show();
 
             } else {
                 System.out.println("\n>>> Login Failed!");
+
+                Alert loginFailed = new Alert(Alert.AlertType.ERROR);
+                loginFailed.setTitle("Fejl meddelelse");
+                loginFailed.setHeaderText("Der opstod en fejl!");
+                loginFailed.setContentText("Du har indtastet forkert brugernavn og adgangskode!");
+
+                loginFailed.showAndWait();
             }
         } catch (Exception e1) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
