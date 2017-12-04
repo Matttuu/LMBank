@@ -53,6 +53,8 @@ public class Login {
                 Parent root = FXMLLoader.load(getClass().getResource("GUI/Forside.fxml"));
                 primaryStage.setTitle("LMBank");
                 primaryStage.setScene(new Scene(root, 1289, 807));
+
+               //    primaryStage.setFullScreen(true);       // Sætter stage i fullscreen, så den passer til alle skærme. Dog følger GUI ikke med eftersom det ikke er responsive.
                 primaryStage.show();
 
             } else {
