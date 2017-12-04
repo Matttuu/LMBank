@@ -55,14 +55,6 @@
             <Font size="16.0" />
          </font>
       </Button>
-      <Button fx:id="Login1" defaultButton="true" layoutX="169.0" layoutY="110.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="145.0" style="-fx-background-color: #41a66c#41a66c #41a66c#41a66c;" text="Betal og overfør">
-         <effect>
-            <Glow />
-         </effect>
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Button>
       <Button fx:id="Login11" defaultButton="true" layoutX="1185.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="94.0" style="-fx-background-color: #41a66c#41a66c #41a66c#41a66c;" text="Log af">
          <effect>
             <Glow />
@@ -71,7 +63,7 @@
             <Font size="16.0" />
          </font>
       </Button>
-      <Label layoutX="1027.0" layoutY="14.0" text="Flenner Flenner">
+      <Label layoutX="1067.0" layoutY="14.0" text="Yolo swag">
          <font>
             <Font name="AdobeArabic-Regular" size="20.0" />
          </font>
