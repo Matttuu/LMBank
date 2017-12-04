@@ -29,7 +29,7 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="560.0" layoutY="218.0" text="Opret kunde">
+      <Label layoutX="495.0" layoutY="217.0" text="Opret kunde">
          <font>
             <Font name="AdobeArabic-Regular" size="59.0" />
          </font>
@@ -71,7 +71,7 @@
             <Font size="16.0" />
          </font>
       </Button>
-      <Label layoutX="1067.0" layoutY="14.0" text="Flenner Flenner">
+      <Label layoutX="1027.0" layoutY="14.0" text="Flenner Flenner">
          <font>
             <Font name="AdobeArabic-Regular" size="20.0" />
          </font>
@@ -81,7 +81,7 @@
             <Image url="@../assets/lmbank_logo.png" />
          </image>
       </ImageView>
-      <Label layoutX="574.0" layoutY="27.0" text="Medarbejder">
+      <Label layoutX="517.0" layoutY="27.0" text="Medarbejder">
          <font>
             <Font name="AdobeArabic-Regular" size="51.0" />
          </font>

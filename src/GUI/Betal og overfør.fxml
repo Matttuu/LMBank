@@ -16,7 +16,7 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="500.0" layoutX="461.0" layoutY="175.0" stroke="#41a66c" strokeType="INSIDE" width="384.0" />
-      <Label layoutX="519.0" layoutY="202.0" text="Betal og overfør">
+      <Label layoutX="524.0" layoutY="202.0" text="Betal og overfør">
          <font>
             <Font name="AdobeArabic-Regular" size="35.0" />
          </font>
@@ -122,7 +122,7 @@
             <Font size="16.0" />
          </font>
       </Button>
-      <Label layoutX="1061.0" layoutY="12.0" text="Flenner Flenner">
+      <Label layoutX="1017.0" layoutY="12.0" text="Flenner Flenner">
          <font>
             <Font name="AdobeArabic-Regular" size="20.0" />
          </font>
