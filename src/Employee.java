@@ -34,7 +34,7 @@ public class Employee extends Users {
     @FXML
     private TextField txtAccType;
 
-    public void OpretKunde(ActionEvent event) throws Exception{ //
+    public void OpretKunde(ActionEvent event) {
 
         DB_Statements stmts = new DB_Statements();
 

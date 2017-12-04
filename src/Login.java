@@ -28,7 +28,7 @@ public class Login {
     private PasswordField txtPassword;
 
     // Opretter metode login som tager imod et ActionEvent parameter ved navn event.
-    public void Login(ActionEvent event) throws Exception{
+    public void Login(ActionEvent event) {
 
         // Opretter et nyt objekt af klassen DB_Statements
         DB_Statements stmts = new DB_Statements();
