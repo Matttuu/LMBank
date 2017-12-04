@@ -19,9 +19,8 @@ import java.sql.Statement;
  * @since December 2017
  * */
 
-public class Employee {
+public class Employee extends Users {
     //Statements til at udføre førespørgelser
-
 
     @FXML
     private Button btCreateCustomer;

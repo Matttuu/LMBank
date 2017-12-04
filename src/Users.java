@@ -7,6 +7,9 @@ public abstract class Users {
     private Roles role;
 
     //Constructor
+    public Users() { //No-arg-constructor
+    }
+
     public Users(String userName, String userPswd, String fName, String lName){
         this.userName = userName;
         this.userPswd = userPswd;
