@@ -9,7 +9,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("GUI/login.fxml"));
-        primaryStage.setTitle("LMBank");
+        primaryStage.setTitle("LMBank Login");
         primaryStage.setScene(new Scene(root, 600, 463));
         primaryStage.show();
     }

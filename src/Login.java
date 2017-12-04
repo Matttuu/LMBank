@@ -17,7 +17,7 @@ import javafx.stage.Stage;
  * @since December 2017
  */
 
-public class Login {
+public class Login extends Main {
 
     // Erklærer variabel
     @FXML
@@ -55,7 +55,7 @@ public class Login {
 
                 /* Sætter stage i fullscreen, så den passer til alle skærme.
                 Dog følger GUI ikke med eftersom det ikke er responsive. */
-               //    primaryStage.setFullScreen(true);
+                // primaryStage.setFullScreen(true);
                 primaryStage.show();
 
             } else {
