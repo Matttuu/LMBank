@@ -48,7 +48,7 @@ public class Forside {
             Alert closeFailed = new Alert(Alert.AlertType.ERROR);
             closeFailed.setTitle("Fejl meddelelse");
             closeFailed.setHeaderText("Der opstod en fejl!");
-            closeFailed.setContentText("Du har indtastet forkert brugernavn og adgangskode!");
+            closeFailed.setContentText("Prøv igen!");
             closeFailed.showAndWait();
         }
 
