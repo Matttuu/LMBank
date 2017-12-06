@@ -20,7 +20,7 @@
                   <Font name="AdobeArabic-Regular" size="35.0" />
                </font>
             </Label>
-            <Button fx:id="Login12" defaultButton="true" layoutX="792.0" layoutY="512.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="173.0" style="-fx-background-color: #41a66c#41a66c #41a66c#41a66c;" text="Opret ny kunde">
+            <Button fx:id="Login12" defaultButton="true" layoutX="792.0" layoutY="512.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="173.0" style="-fx-background-color: #41a66c#41a66c #41a66c#41a66c;" text="Opret konto">
                <effect>
                   <Glow />
                </effect>
@@ -28,7 +28,7 @@
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button fx:id="Login121" defaultButton="true" layoutX="793.0" layoutY="401.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="173.0" style="-fx-background-color: #41a66c#41a66c #41a66c#41a66c;" text="Tilføj konto">
+            <Button fx:id="Login121" defaultButton="true" layoutX="793.0" layoutY="401.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="173.0" style="-fx-background-color: #41a66c#41a66c #41a66c#41a66c;" text="Opret kunde">
                <effect>
                   <Glow />
                </effect>
