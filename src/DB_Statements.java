@@ -105,5 +105,18 @@ public class DB_Statements {
             ex.printStackTrace();
         }
     }
+    public void createAccount(int userID, int accType, double overdraft, double interRate){
+        final int regNo = 1666;
+
+        Random r1 = new Random();
+        int low1 = (int)1000.0;
+        int high1 = (int)999999999.0;
+        int accNo = r1.nextInt(high1-low1) + low1;
+
+        Random r2 = new Random();
+        int low2 = 4000;
+        int high2 = 40000;
+        int balance = r2.nextInt(high2-low2) + low2;
+    }
 
 }
