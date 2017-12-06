@@ -109,8 +109,8 @@ public class DB_Statements {
         final int regNo = 1666;
 
         Random r1 = new Random();
-        int low1 = (int)1000.0;
-        int high1 = (int)999999999.0;
+        int low1 = 1000;
+        int high1 = 1999999999;
         int accNo = r1.nextInt(high1-low1) + low1;
 
         Random r2 = new Random();
