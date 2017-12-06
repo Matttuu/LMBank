@@ -43,15 +43,12 @@ public class Forside {
             Platform.exit();
         }
 
-
         catch (SQLException ex) {
             System.out.println("\n>>> Login Failed!");
-
             Alert closeFailed = new Alert(Alert.AlertType.ERROR);
             closeFailed.setTitle("Fejl meddelelse");
             closeFailed.setHeaderText("Der opstod en fejl!");
             closeFailed.setContentText("Du har indtastet forkert brugernavn og adgangskode!");
-
             closeFailed.showAndWait();
         }
 
