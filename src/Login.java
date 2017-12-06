@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 /**
  * Denne klasse indeholder metoden Login, som er knyttet til login.fxml.
@@ -26,6 +27,9 @@ public class Login extends Main {
     // Erklærer variabel
     @FXML
     private PasswordField txtPassword;
+
+    @FXML
+    private Button login;
 
     // Opretter metode login som tager imod et ActionEvent parameter ved navn event.
     public void Login(ActionEvent event) {
@@ -47,16 +51,20 @@ public class Login extends Main {
 
 
             if (stmts.checkLogin(username, password)) {
+
                 System.out.println("\n>>> Login Success");
+
                 Stage primaryStage = new Stage();
                 Parent root = FXMLLoader.load(getClass().getResource("GUI/Forside.fxml"));
                 primaryStage.setTitle("LMBank");
                 primaryStage.setScene(new Scene(root, 1289, 807));
 
+
                 /* Sætter stage i fullscreen, så den passer til alle skærme.
                 Dog følger GUI ikke med eftersom det ikke er responsive. */
                 // primaryStage.setFullScreen(true);
                 primaryStage.show();
+
 
             } else {
                 System.out.println("\n>>> Login Failed!");
@@ -68,6 +76,7 @@ public class Login extends Main {
 
                 loginFailed.showAndWait();
             }
+
         } catch (Exception e1) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Fejl meddelelse");

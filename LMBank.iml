@@ -40,10 +40,22 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../Database/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar!/" />
+          <root url="jar://C:/Users/Database/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/Documents/mysql-connector-java-5.1.44" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$USER_HOME$/Documents/mysql-connector-java-5.1.44/src" />
+        </SOURCES>
+        <jarDirectory url="file://$USER_HOME$/Documents/mysql-connector-java-5.1.44" recursive="false" />
       </library>
     </orderEntry>
   </component>
