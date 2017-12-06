@@ -113,10 +113,10 @@ public class DB_Statements {
         int high1 = 1999999999;
         int accNo = r1.nextInt(high1-low1) + low1;
 
-        Random r2 = new Random();
-        int low2 = 4000;
-        int high2 = 40000;
-        int balance = r2.nextInt(high2-low2) + low2;
+        Random r2 = new Random(2);
+        double low2 = 4000.0;
+        double high2 = 40000.0;
+        double balance = r2.nextDouble(high2-low2) + low2;
     }
 
 }
