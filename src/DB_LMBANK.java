@@ -83,19 +83,6 @@ public class DB_LMBANK {
      * @exception SQLException, Håndterer exception, hvis forbindelse IKKE afbrydes.
      *
      */
-    public static Connection closeConnection() {
 
-        try {
-            con.close();
-            System.out.println("\n>>> Forbindelsen blev afbrudt som forventet.");
-        }
-
-        catch (SQLException ex) {
-            System.out.println("\n>>> Forbindelsen blev IKKE afbrudt som forventet!");
-        }
-
-        return con;
-
-    }
 
 }
