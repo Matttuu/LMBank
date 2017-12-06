@@ -26,9 +26,7 @@ public class Forside {
     // Opretter metode login som tager imod et ActionEvent parameter ved navn event.
     public void logOutAction(ActionEvent event) throws SQLException {
 
-
         Connection con = DB_LMBANK.connect();
-
 
         /**
          * Starter en try-catch block som lukker applikationen
@@ -44,15 +42,13 @@ public class Forside {
         }
 
         catch (SQLException ex) {
-            System.out.println("\n>>> Login Failed!");
+            System.out.println("\n>>> Logout Failed!");
             Alert closeFailed = new Alert(Alert.AlertType.ERROR);
             closeFailed.setTitle("Fejl meddelelse");
             closeFailed.setHeaderText("Der opstod en fejl!");
             closeFailed.setContentText("Prøv igen!");
             closeFailed.showAndWait();
         }
-
-
 
     }
 

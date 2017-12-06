@@ -78,11 +78,4 @@ public class DB_LMBANK {
 
     }
 
-    /**
-     * Metode til at lukke forbindelsen igen, så databasen ikke overbelastes.
-     * @exception SQLException, Håndterer exception, hvis forbindelse IKKE afbrydes.
-     *
-     */
-
-
 }
