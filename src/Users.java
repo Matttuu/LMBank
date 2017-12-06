@@ -1,12 +1,10 @@
-import java.util.Random;
-
 public abstract class Users {
 
     //Datafields
     private String userName, userPswd, fName, lName;
     private Roles role;
 
-    //Constructor
+    //Constructors
     public Users() { //No-arg-constructor
     }
 
